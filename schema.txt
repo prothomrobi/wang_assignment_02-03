@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title":"Data Reading From Three Sensors",
+  "type": "object",
+  "required":["id","sensor_name","sensor_value"],
+ 
+  "properties": {
+     "id": {
+       "description": "ID",
+       "type": ["integer"]
+                   },
+     "sensor_name": {
+       "description": "Sensor Name",
+       "type": ["string"]
+                   },
+     "sensor_value": {
+       "description": "Sensor Value",
+       "type": ["number"]
+                   },
+     "timestamp":  {
+       "description": "Reading Time",
+       "type": ["string"],
+	   "format": "date-time"
+                   }   
+   },
+
+   "additionalProperties":false
+}
